@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="vector-calculator-icon.jpg" type="image/png">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>Calculator </h1>
+<img src="https://th.bing.com/th/id/R.142d0a892a5061bdf2745eba69d5a29d?rik=zIjhLyq2dSuUmg&riu=http%3a%2f%2ficons.veryicon.com%2fpng%2fApplication%2fSevenesque+(iOS+7+inspired)%2fCalculator.png&ehk=uq8nVzsJob2HEJ3qO%2boBJzYH2sJP8BTVLXEQl%2fb6vQs%3d&risl=&pid=ImgRaw&r=0" alt="error loading img">
+        </header>
+        <div class="calculator">
+            <input type="text" placeholder="0" id="inputBox">
+            <div> 
+                <button id="ac"  style="font-size: 1.2rem;">AC</button>
+                <button id="del"     style="font-size: 1.2rem;">DEL</button>
+                <button id="per" onclick="input.value +='%' ">%</button>
+                <button id="div" onclick="input.value +='/' ">/</button>
+
+            </div>
+         
+            <div> 
+                <button onclick="input.value +='7'">7</button>
+                <button onclick="input.value +='8'">8</button>
+                <button onclick="input.value +='9'">9</button>
+                <button id="mul" onclick="input.value +='x'">x</button>
+
+            </div>
+            <div> 
+                <button onclick="input.value +='4'">4</button>
+                <button onclick="input.value +='5'">5</button>
+                <button onclick="input.value +='6'">6</button>
+                <button id="minus" onclick="input.value +='-'">-</button>
+
+            </div>
+            <div> 
+                <button onclick="input.value +='1'">1</button>
+                <button onclick="input.value +='2'">2</button>
+                <button onclick="input.value +='3'">3</button>
+                <button   id="plus" onclick="input.value +='+'">+</button>
+
+            </div>
+            <div> 
+                <button onclick="input.value +='00'">00</button>
+                <button onclick="input.value +='0'">0</button>
+                <button onclick="input.value +='.'">.</button>
+                <button id="equal-btn" onclick="input.value=eval(input.value)">=</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
